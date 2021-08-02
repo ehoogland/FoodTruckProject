@@ -5,16 +5,15 @@ Briefly, users input and rate a list of food trucks, then view the average
 rating and the highest-rated truck. All trucks may also be viewed.
 
 The program illustrates the concept of encapsulation in that instance fields
-are private and getters and setters are used to access information. These and
-an explicit toString() method were used.
+are private and getters and setters are used to access information.
 
 Data storage of objects in an array is useful, and having an explicit toString()
 method facilitates viewing the data fields of those objects.
 
 ### Technologies Used
-Eclipse IDE
-vi, atom text editors
-Apple MacBook Pro computer
+Eclipse IDE;
+vi, atom text editors;
+Apple MacBook Pro computer;
 git
 
 ### Lessons Learned
