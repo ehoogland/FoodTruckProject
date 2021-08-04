@@ -2,7 +2,7 @@ package com.skilldistillery.foodtruck.app;
 
 /*
  * When a FoodTruck is created, its constructor assigns its
- * id field the current value of a static field (such as (nextTruckId) 
+ * id field the current value of a static field (such as (nextTruckId)
  * and then increments the static field.
  */
 public class FoodTruck {
@@ -14,7 +14,8 @@ public class FoodTruck {
 	private double rating;
 
 	public FoodTruck(String name, String foodType, double rating) {
-
+    // recall that assignment is made with the original (pre-increment) value,
+		so nextTruckID assigns 1 to truckID before it increments to 2.
 		truckID = nextTruckID++;
 		this.name = name;
 		this.foodType = foodType;
@@ -48,7 +49,7 @@ public class FoodTruck {
 		String truckInfo = this.toString();
 		System.out.println(truckInfo);
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Food Truck ID: " + truckID + "\nFood Truck Name: " + name
