@@ -1,9 +1,3 @@
-/**
- * Lessons
- * 
- * Array is created in the FoodTruck app, not the FoodTruck class
- * 
- */
 package com.skilldistillery.foodtruck.app;
 
 import java.util.Scanner;
@@ -30,9 +24,11 @@ public class FoodTruckApp {
 	}
 
 	private final void greeting() {
-		System.out.println("*********************************************");
+		System.out.println("********************************************"
+				+ "");
 		System.out.println();
-		System.out.print("*************");
+		System.out.print("***********");
+	
 
 		System.out.print(" Greetings, Truckers ");
 		System.out.println("***********");
@@ -40,7 +36,7 @@ public class FoodTruckApp {
 		System.out.println("        Weigh In On Up To " + MAX_TRUCKS + " Food Trucks!");
 		System.out.println();
 
-		System.out.println("*********************************************");
+		System.out.println("*******************************************");
 		System.out.println("\n");
 	}
 
@@ -48,7 +44,7 @@ public class FoodTruckApp {
 		for (int truckID = 0; truckID < MAX_TRUCKS; truckID++) {
 
 			System.out.println("Enter food truck name: ");
-			System.out.println("(To exit or finish truck reviews, enter 'quit'.)");
+			System.out.println("(To exit or to finish truck reviews \n\tenter 'quit' or 'q'.)");
 			String name = scanner.nextLine();
 
 			if (name.equalsIgnoreCase("quit") || name.equalsIgnoreCase("q")) {
@@ -131,7 +127,7 @@ public class FoodTruckApp {
 		int ratingsTotal = 0;
 		int count = 0;
 
-		for (int i = 0; i < trucks.length; i++) {
+		for (int i = 0; i < MAX_TRUCKS; i++) {
 			FoodTruck foodTruck = trucks[i];
 			if (foodTruck != null) {
 				ratingsTotal += foodTruck.getRating();

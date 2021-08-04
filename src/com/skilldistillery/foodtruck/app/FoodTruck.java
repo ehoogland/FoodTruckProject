@@ -15,8 +15,7 @@ public class FoodTruck {
 
 	public FoodTruck(String name, String foodType, double rating) {
 
-		truckID = nextTruckID;
-		nextTruckID = nextTruckID++;
+		truckID = nextTruckID++;
 		this.name = name;
 		this.foodType = foodType;
 		this.rating = rating;
