@@ -15,7 +15,7 @@ public class FoodTruck {
 
 	public FoodTruck(String name, String foodType, double rating) {
     // recall that assignment is made with the original (pre-increment) value,
-		so nextTruckID assigns 1 to truckID before it increments to 2.
+	//	so nextTruckID assigns 1 to truckID before it increments to 2.
 		truckID = nextTruckID++;
 		this.name = name;
 		this.foodType = foodType;
